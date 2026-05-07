@@ -283,7 +283,6 @@ header {
   top: 115px;
   left: 24px;
   display: grid;
-  position: relative;
 }
 
 .about__logo {
@@ -307,7 +306,6 @@ header {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-style: normal;
-  font-weight: bold;
   font-size: 40px;
   line-height: 100%;
   letter-spacing: 0;
@@ -364,7 +362,6 @@ address {
   text-decoration: underline;
   color: #000;
   transition: underline 0.3s;
-  text-decoration: underline;
 }
 
 .footer-menu {
