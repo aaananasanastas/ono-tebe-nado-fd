@@ -132,24 +132,24 @@ address {
 
 .cover__description {
   display: flex;
-  flex-direction: row; 
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   font-size: 22px;
   color: white;
   z-index: 2;
-  width: 100%; 
+  width: 100%;
 }
 
 .cover__description-text {
-  padding: 112px 0 0 50px; 
+  padding: 112px 0 0 50px;
   line-height: 28px;
   word-spacing: 15px;
 }
 
 .bet-button {
   display: flex;
-  justify-content: center; 
+  justify-content: center;
   align-items: center;
   text-align: center;
   margin: 100px 50px 0 0;
@@ -188,13 +188,13 @@ address {
 }
 
 .card {
-  position: relative; 
+  position: relative;
   overflow: hidden;
   width: 33%;
   max-width: 334px;
   box-sizing: border-box;
-  display: grid; 
-  grid-template-areas: "content"; 
+  display: grid;
+  grid-template-areas: "content";
 }
 
 .card__bg-img {
@@ -202,7 +202,7 @@ address {
   height: 100%;
   object-fit: cover;
   object-position: center;
-  grid-area: content; 
+  grid-area: content;
 }
 
 .card__content {
@@ -210,8 +210,8 @@ address {
   flex-direction: column;
   justify-content: space-between;
   padding: 20px;
-  grid-area: content; 
-  z-index: 1; 
+  grid-area: content;
+  z-index: 1;
 }
 
 .card__title {
@@ -237,17 +237,17 @@ address {
   word-spacing: 1.5px;
 }
 
-.card_text_book { 
- text-align: left; 
-  color: white; 
-  font-size: 20px; 
-  font-style: normal; 
-  font-weight: 400; 
-  line-height: 120%; 
-  margin-bottom: 30px; 
-  margin-left: 20px; 
+.card_text_book {
+  text-align: left;
+  color: white;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  margin-bottom: 30px;
+  margin-left: 20px;
   gap: 10px;
-  word-spacing: 1px; 
+  word-spacing: 1px;
 }
 
 .lots__look-more-link {
@@ -267,8 +267,8 @@ address {
   width: 1052px;
   margin-left: 25px;
   margin-top: 97px;
-  display: flex; 
-  gap: 35px; 
+  display: flex;
+  gap: 35px;
 }
 
 .about__logo {
@@ -282,13 +282,13 @@ address {
 }
 
 .about__title {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 40px;
   line-height: 100%;
   text-transform: uppercase;
-  margin-bottom: 25px; /* Отступ под заголовком */
-  color: #000; 
+  margin-bottom: 25px;
+  color: #000;
 }
 
 .about__text {
@@ -297,13 +297,13 @@ address {
   font-size: 20px;
   line-height: 24px;
   word-spacing: 1px;
-  color: #000; /* Чёрный цвет текста */
-  max-width: 693px; /* Ограничиваем ширину текстового блока */
+  color: #000;
+  max-width: 693px;
   margin-top: 100px;
 }
 
 .about__text p {
-  margin-bottom: 25px; /* Небольшой отступ между абзацами */
+  margin-bottom: 25px;
 }
 
 footer {
@@ -312,7 +312,7 @@ footer {
   max-width: 1100px;
   height: 180px;
   margin-right: 40px;
-  margin-top: 115px; /* для выравнивания внизу */
+  margin-top: 115px;
 }
 
 footer address {
