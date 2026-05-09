@@ -88,8 +88,7 @@ address {
   position: relative;
   z-index: 2;
   width: 1000px;
-  padding: 150px 0 0 0;
-  left: 50px;
+  padding: 150px 0 0 50px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
@@ -133,34 +132,34 @@ address {
 
 .cover__description {
   display: flex;
-  flex-direction: column;
+  flex-direction: row; 
+  justify-content: space-between;
   align-items: center;
   font-size: 22px;
   color: white;
   z-index: 2;
+  width: 100%; 
 }
 
 .cover__description-text {
-  /* описание картинки*/
-  position: relative;
-  padding: 112px 360px 0 0;
+  padding: 112px 0 0 50px; 
   line-height: 28px;
   word-spacing: 15px;
 }
 
 .bet-button {
-  /* кнопка */
-  position: relative;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  text-align: center;
+  margin: 100px 50px 0 0;
   width: 256px;
   height: 51px;
-  top: -40px;
-  left: 370px;
   border: 1px solid white;
   background-color: rgba(0, 0, 0, 0);
   font-size: 22px;
   color: white;
   cursor: pointer;
-  padding: 0;
   outline: none;
 }
 
@@ -171,7 +170,6 @@ address {
 }
 
 .lots__heading {
-  /*ЗАГОЛОВОК ЛОТЫ*/
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 40px;
@@ -186,65 +184,70 @@ address {
   display: flex;
   flex-wrap: wrap;
   gap: 25px;
+  justify-content: space-between;
 }
 
 .card {
-  position: relative;
+  position: relative; 
   overflow: hidden;
-  width: 334px;
+  width: 33%;
+  max-width: 334px;
+  box-sizing: border-box;
+  display: grid; 
+  grid-template-areas: "content"; 
 }
 
 .card__bg-img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center;
+  grid-area: content; 
 }
 
 .card__content {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  right: 20px;
-  bottom: 20px;
-  z-index: 2;
-  padding: 10px;
+  padding: 20px;
+  grid-area: content; 
+  z-index: 1; 
 }
 
 .card__title {
-  display: flex;
-  height: 150px;
   color: white;
   font-size: 22px;
   font-weight: 700;
   line-height: 120%;
-  text-decoration-line: underline;
+  text-decoration: underline;
   text-transform: uppercase;
-  margin-top: 20px;
-  margin-left: 10px;
+  margin-top: 30px;
+  margin-left: 20px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 }
 
 .card__text {
-  text-align: left;
   color: white;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
   line-height: 120%;
-  margin-bottom: 20px;
-  margin-left: 10px;
+  margin-bottom: 30px;
+  margin-left: 20px;
   word-spacing: 1.5px;
 }
 
-.card_text_book {
-  position: relative;
-  margin-top: 165px;
-  margin-left: 10px;
-  gap: 5px;
-  text-align: left;
-  bottom: 130px;
+.card_text_book { 
+ text-align: left; 
+  color: white; 
+  font-size: 20px; 
+  font-style: normal; 
+  font-weight: 400; 
+  line-height: 120%; 
+  margin-bottom: 30px; 
+  margin-left: 20px; 
+  gap: 10px;
+  word-spacing: 1px; 
 }
 
 .lots__look-more-link {
@@ -261,76 +264,67 @@ address {
 }
 
 .about {
-  position: absolute;
   width: 1052px;
   margin-left: 25px;
   margin-top: 97px;
-  display: grid;
+  display: flex; 
+  gap: 35px; 
 }
 
 .about__logo {
   width: 240px;
   height: 240px;
-  position: relative;
-  top: 37px;
-  left: 47px;
+  margin: 37px 0 0 46px;
 }
 
 .about__description {
-  width: 693px;
-  position: relative;
-  left: 355px;
-  bottom: 100px;
+  margin: 145px 0 0 40px;
 }
 
 .about__title {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-weight: 700;
-  font-style: normal;
   font-size: 40px;
   line-height: 100%;
-  letter-spacing: 0;
   text-transform: uppercase;
+  margin-bottom: 25px; /* Отступ под заголовком */
+  color: #000; 
 }
 
 .about__text {
-  display: flex;
-  flex-direction: column;
-  width: 693px;
-  justify-content: flex-end;
-  margin-top: 105px;
-  gap: 25px;
   font-family: "Raleway", sans-serif;
   font-weight: 400;
   font-size: 20px;
   line-height: 24px;
   word-spacing: 1px;
-  color: black;
+  color: #000; /* Чёрный цвет текста */
+  max-width: 693px; /* Ограничиваем ширину текстового блока */
+  margin-top: 100px;
+}
+
+.about__text p {
+  margin-bottom: 25px; /* Небольшой отступ между абзацами */
 }
 
 footer {
-  position: absolute;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  width: 100%;
   max-width: 1100px;
   height: 180px;
-  left: 0;
-  right: 80px;
-  margin-left: auto;
-  margin-right: auto;
-  top: 2809px;
+  margin-right: 40px;
+  margin-top: 115px; /* для выравнивания внизу */
 }
 
-
+footer address {
+  margin-right: 25px;
+}
 
 .footer-menu {
   display: flex;
   flex-direction: column;
   text-align: center;
-  align-items: center;
-  margin-top: 35px;
-  margin-left: 80px;
+  margin-top: 40px;
+  margin-left: 45px;
 }
 
 .footer-menu-list {
